@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conference 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://source.unsplash.com/1600x900/?technology,conference') no-repeat center center/cover;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 100%;
+            margin: 20px auto; /* Enables scrolling */
+        }
+        h1, h2 {
+            font-weight: 600;
+        }
+        ol {
+            text-align: left;
+            margin: auto;
+            list-style-type: upper-roman;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid white;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background: #ff6600;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #cc5200;
+        }
+        @media (max-width: 600px) {
+            body {
+                display: block;
+                padding: 10px;
+            }
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            table {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Global Tech Conference 2025</h1>
+            <p>Join industry leaders, developers, and innovators from around the world.</p>
+        </header>
+
+        <section>
+            <h2>Conference Agenda</h2>
+            <ol>
+                <li>Keynote Speech</li>
+                <li>Emerging Technologies</li>
+                <li>Cybersecurity Trends</li>
+                <li>Artificial Intelligence in Business</li>
+                <li>Networking & Closing Remarks</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Featured Speaker</h2>
+            <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Keynote Speaker" width="100%" style="border-radius: 10px;">
+            <p>Dr. Jane Doe - AI Researcher & Tech Visionary</p>
+        </section>
+
+        <section>
+            <h2>Organizer Contacts</h2>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>Aminata Kadzo</td>
+                    <td>Event Manager</td>
+                    <td>+1234567890</td>
+                    <td>natakadzo@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td>Magda Selina</td>
+                    <td>Logistics Head</td>
+                    <td>+9876543210</td>
+                    <td>magdaselina@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td>Mika Karimu</td>
+                    <td>Tech Coordinator</td>
+                    <td>+1122334455</td>
+                    <td>mickarima@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>IV</td>
+                    <td>Sauda Mapenzi</td>
+                    <td>Marketing Lead</td>
+                    <td>+2233445566</td>
+                    <td>saumape@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>Daudi Msikitini</td>
+                    <td>Security Head</td>
+                    <td>+3344556677</td>
+                    <td>daudiskiti@gmail.com</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Watch the Conference Teaser</h2>
+            <video width="100%" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Register for the Conference</h2>
+            <form id="registrationForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a strong password" required minlength="6">
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="profession">Profession:</label>
+                <select id="profession" name="profession" required>
+                    <option value="">Select your profession</option>
+                    <option>Software Developer</option>
+                    <option>Data Scientist</option>
+                    <option>Cybersecurity Expert</option>
+                    <option>Tech Entrepreneur</option>
+                </select>
+                
+                <button type="submit">Register Now</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                event.preventDefault();
+                return;
+            }
+            
+            if (password.length < 6) {
+                alert('Password must be at least 6 characters long.');
+                event.preventDefault();
+                return;
+            }
+            
+            alert('Registration successful!');
+        });
+    </script>
+</body>
+</html>
